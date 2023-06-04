@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/medhost',function(){
+    return view('MedHostPublic.index');
+});
+
 Route::get('/register_user', function () {
     return view('auth.register');
 });

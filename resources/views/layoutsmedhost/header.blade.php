@@ -9,6 +9,10 @@
     <script src="https://kit.fontawesome.com/3faf17125f.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 </head>
 <body>
     <div class="header-static">
@@ -58,7 +62,7 @@
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link content_img" aria-current="page" href="#"><img id="img-logo" src="{{ asset('img/logo_header.png') }}" alt="" width="230px" height="45px"></a>
+                  <a class="nav-link content_img" aria-current="page" href="#"><img id="img-logo" src="{{ asset('Imagenes/LOGO.png') }}" alt="" width="230px" height="45px"></a>
                 </li>
     
                 <li class="nav-item dropdown">
@@ -112,8 +116,7 @@
       </header>
 @yield('header')
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
 </html>
 <script>
   document.addEventListener("DOMContentLoaded", function() {

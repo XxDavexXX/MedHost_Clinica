@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav d-flex justify-content-between" >
                 <li class="nav-item">
-                  <a class="nav-link active " aria-current="page" href="#">INICIO</a>
+                  <a class="nav-link active " aria-current="page" href="{{ route('Home_MedHost')}}#">INICIO</a>
                 </li>
     
                 <li class="nav-item dropdown">
@@ -51,46 +51,38 @@
                     NOSOTROS
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="{{ route('Team_MedHost') }}">Informacion</a></li>
+                    <li><a class="dropdown-item" href="{{ route('OurTeam_MedHost' )}}">Nuestro Equipo</a></li>
                   </ul>
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">SERVICIOS</a>
+                  <a class="nav-link " aria-current="page" href="{{ route('Servicios_MedHost' )}}">SERVICIOS</a>
                 </li>
     
                 <li class="nav-item">
-                  <a class="nav-link content_img" aria-current="page" href="#"><img id="img-logo" src="{{ asset('Imagenes/LOGO.png') }}" alt="" width="230px" height="45px"></a>
+                  <a class="nav-link content_img" aria-current="page" href="{{ route('Home_MedHost')}}"><img id="img-logo" src="{{ asset('Imagenes/LOGO.png') }}" alt="" width="230px" height="45px"></a>
                 </li>
     
+                
+    
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="{{ route('Especialidades_MedHost')}}">ESPECIALIDADES</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="{{ route('Contact_MedHost')}}">CONTACTO</a>
+                </li>
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    NOTICIAS
+                    <i class="fa-solid fa-user fa-xl" style="color: #000000;"></i>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="{{ route('Login_User' ) }}">Iniciar Sesion</a></li>
+                    <li><a class="dropdown-item" href="{{ route('Register_User' ) }}">Registrarse</a></li>
                   </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    ESPECIALIDADES
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">CONTACTO</a>
                 </li>
               </ul>
             </div>

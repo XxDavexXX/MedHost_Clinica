@@ -14,9 +14,9 @@ use App\Http\Controllers\ProductoController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::view('/','welcome');
 
 Route::get('/layoutheader', function () {
     return view('layoutsmedhost.header'); 
@@ -27,33 +27,15 @@ Route::get('/layoutfooter', function () {
 });
 
 
-Route::get('/medhost_home',function(){
-    return view('MedHostPublic.home');
-});
+Route::view('/medhost_home', 'MedHostPublic.home')->name('Home_MedHost');
+Route::view('/medhost_contactanos', 'MedHostPublic.contactanos')->name('Contact_MedHost');
+Route::view('/medhost_servicios', 'MedHostPublic.servicios')->name('Servicios_MedHost');
+Route::view('/medhost_overview','MedHostPublic.overview')->name('Team_MedHost');
+Route::view('/medhost_about_our_team','MedHostPublic.about_our_team')->name('OurTeam_MedHost');
+Route::view('/medhost_especialidades','MedHostPublic.especialidades')->name('Especialidades_MedHost');
+Route::view('/register_user', 'auth.register')->name('Register_User');
+Route::view('/Login_User', 'auth.login' )->name('Login_User');
 
-Route::get('/medhost_contactanos',function(){
-    return view('MedHostPublic.contactanos');
-});
-
-Route::get('/medhost_servicios',function(){
-    return view('MedHostPublic.servicios');
-});
-
-Route::get('/medhost_especialidades',function(){
-    return view('MedHostPublic.especialidades');
-});
-
-Route::get('/medhost_about_our_team',function(){
-    return view('MedHostPublic.about_our_team');
-});
-
-Route::get('/medhost_overview',function(){
-    return view('MedHostPublic.overview');
-});
-
-Route::get('/register_user', function () {
-    return view('auth.register');
-});
 
 Route::middleware([
     'auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {

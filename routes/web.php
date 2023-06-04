@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/layoutheader', function () {
+    return view('layoutmedhost.header'); 
+});
+
+
 Route::get('/medhost',function(){
     return view('MedHostPublic.index');
 });

@@ -1,3 +1,5 @@
+@extends("layoutsmedhost.header")
+@section("header")
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,93 +37,8 @@
 </head>
 
 <body>
-  <div class="header-static">
-    <div>
-      <p><b>Free Call:</b> 989-282-262</p>
-    </div>
-    <div class="header-static-info">
-      <p><b>Opening Hours: </b>Mart-Juev: 00 am - 24:00 pm</p>
-    </div>
-    <div class="links-icons">
-      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-      <a href=""><i class="fa-brands fa-youtube"></i></a>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </div>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary header">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img id="imgMovile" src="Imagenes/LOGO.png" alt="" width="230px"
-            height="45px"></a><!--Logo Version Mobile:Css:display:none-->
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav d-flex justify-content-between">
-            <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="#">INICIO</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                NOSOTROS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="OverView.html">About:OverView</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">SERVICIOS</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active " id="img-logo" aria-current="page" href="#"><img src="Imagenes/LOGO.png" alt=""
-                  width="230px" height="45px"></a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                NOTICIAS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                ESPECIALIDADES
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!--End del Header-->
-
-
+  
+  
 
   <section class="CarouselImagenes">
     <div class="slider">
@@ -514,7 +431,6 @@
         <i class='bx bx-chevron-right bx-rotate-270 ir-arriba' style='color:#ffff'></i>
       </div>
   </div>
-
 </body>
 <!-- Swiper JS -->
 <script src="js/swiper-bundle.min.js"></script>
@@ -524,3 +440,4 @@
   integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
 </html>
+@endsection

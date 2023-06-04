@@ -19,12 +19,36 @@ Route::get('/', function () {
 });
 
 Route::get('/layoutheader', function () {
-    return view('layoutmedhost.header'); 
+    return view('layoutsmedhost.header'); 
+});
+
+Route::get('/layoutfooter', function () {
+    return view('layoutsmedhost.footer'); 
 });
 
 
-Route::get('/medhost',function(){
-    return view('MedHostPublic.index');
+Route::get('/medhost_home',function(){
+    return view('MedHostPublic.home');
+});
+
+Route::get('/medhost_contactanos',function(){
+    return view('MedHostPublic.contactanos');
+});
+
+Route::get('/medhost_servicios',function(){
+    return view('MedHostPublic.servicios');
+});
+
+Route::get('/medhost_especialidades',function(){
+    return view('MedHostPublic.especialidades');
+});
+
+Route::get('/medhost_about_our_team',function(){
+    return view('MedHostPublic.about_our_team');
+});
+
+Route::get('/medhost_overview',function(){
+    return view('MedHostPublic.overview');
 });
 
 Route::get('/register_user', function () {

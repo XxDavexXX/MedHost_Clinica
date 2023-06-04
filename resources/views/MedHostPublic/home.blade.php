@@ -1,3 +1,7 @@
+@extends("layoutsmedhost.footer")
+
+@section("footer")
+
 @extends("layoutsmedhost.header") 
 @section("header")
 <!DOCTYPE html>
@@ -345,87 +349,6 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
-
-
-
-  
-
-    
-  <footer>
-    <div class="contents-footer">
-      <div class="header">
-        <h5>Sobre Nosotros</h5>
-        <hr>
-      </div>
-      <div class="body">
-        <p>Somos una clinica que busca preservar y cuidar tu integridad mediante nuestros servicios de salud</p>
-      </div>
-    </div>
-
-    <div class="contents-footer">
-      <div class="header">
-        <h5>Noticias</h5>
-        <hr>
-      </div>
-      <div class="body">
-        <p>MedHost consigue reconocimiento nacional</p>
-        <span>Junio 10,2018 / 3 Comentarios</span>
-        <br>
-        <br>
-        <p>Artista internacional busca ayuda en MedHost</p>
-        <span>Junio 12,2018 / 3 Comentarios</span>
-      </div>
-    </div>
-
-    <div class="contents-footer">
-      <div class="header">
-        <h5>Horarios de Apertura </h5>
-        <hr>
-      </div>
-      <div class="body">
-        <p>Lun-Vier: 00 - 11:59pm</p>
-        <p>Sabado: 8:00am - 11:59pm</p>
-        <p>Domingo: 24 horas</p>
-      </div>
-    </div>
-
-    <div class="contents-footer">
-      <div class="header">
-        <h5>Informacion de Contacto</h5>
-        <hr>
-      </div>
-      <div class="body">
-        <div class="icon">
-          <i class='bx bxs-map' style='color:#99f6c3'></i>
-          <p>Av. Arequipa 1148, Lima 15046</p>
-        </div>
-        <div class="icon">
-          <i class='bx bxs-phone' style='color:#99f6c3'></i>
-          <p> +51 (025)987-405</p>
-        </div>
-        <div class="icon">
-          <i class='bx bx-envelope' style='color:#99f6c3'></i>
-          <p>medhost@medicin.org</p>
-        </div>
-      </div>
-
-  </footer>
-
-
-  <div class="footerStatic">
-      <img src="Imagenes/LOGO.png" alt=""  height="width="50px">
-      <p>© Todos los derechos reservados</p>
-      <div class="icons">
-        <i class='bx bxl-facebook'></i>
-        <i class='bx bxl-twitter' ></i>
-        <i class='bx bxl-google-plus' ></i>
-        <i class='bx bxl-youtube' ></i>
-        <i class='bx bx-plus-medical' ></i>
-      </div>
-      <div class="flecha">
-        <i class='bx bx-chevron-right bx-rotate-270 ir-arriba' style='color:#ffff'></i>
-      </div>
-  </div>
 </body>
 <!-- Swiper JS -->
 <script src="js/swiper-bundle.min.js"></script>
@@ -435,4 +358,5 @@
   integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
 </html>
+@endsection
 @endsection
